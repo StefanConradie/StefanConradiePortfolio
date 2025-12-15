@@ -109,3 +109,4 @@ Because this is a static site:
 
 - You can deploy to any static host (e.g. GitHub Pages, Netlify, Vercel, S3, etc.).
 - Ensure your host serves files from the project root so `/public/*` assets resolve correctly.
+# StefanConradiePortfolio
