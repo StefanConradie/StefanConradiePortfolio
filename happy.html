@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="bg-background text-gray-400 selection:bg-cyan-700 selection:text-white">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="generator" content="HTML Portfolio" />
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#15191e" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Primary Meta Tags -->
+  <title>No need to be upset - Stefan Conradie</title>
+  <meta name="title" content="No need to be upset" />
+  <meta name="description" content="No need to be upset" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#0c0f11",
+            primary: "#F5F5F5",
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Global Styles -->
+  <style>
+    noise {
+      pointer-events: none;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeat center center url('/noise.svg');
+      background-size: auto;
+      background-size: 32%;
+      opacity: 0.05;
+      mix-blend-mode: luminosity;
+    }
+  </style>
+
+  <script>
+    function onKonamiCode(cb) {
+      var input = "";
+      var key = "38384040373937396665";
+      document.addEventListener("keydown", function (e) {
+        input += "" + e.keyCode;
+        if (input === key) {
+          return cb();
+        }
+        if (!key.indexOf(input)) return;
+        input = "" + e.keyCode;
+      });
+    }
+
+    onKonamiCode(function () {
+      window.location.href = "/happy.html";
+    });
+  </script>
+</head>
+<body class="xl:w-[55rem] lg:w-4/5 w-full md:px-4 mx-auto font-sans">
+  <div>
+    <header id="main-header" class="mb-8 px-6 mt-6">
+      <nav
+        id="navigation-menu"
+        aria-label="Main menu"
+        class="flex flex-col lg:flex-row justify-between items-start lg:items-center"
+      >
+        <span class="mb-4 lg:mb-0">
+          <a href="/" class="text-white font-medium text-md">
+            stefanconradie
+          </a>
+        </span>
+        <span class="flex flex-wrap gap-6 text-sm">
+          <a
+            href="/"
+            id="home"
+            class="text-gray-400 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          >
+            index.html
+          </a>
+          <a
+            href="/cv.html"
+            id="cv"
+            class="text-gray-400 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          >
+            cv.pdf
+          </a>
+        </span>
+      </nav>
+    </header>
+    <main id="main" class="px-2 md:px-6 pb-12">
+      <div class="flex flex-row justify-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/I_NkBrDmGxM?si=aOwcN8js3gwgg5vE&controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          class="shadow-xl rounded-lg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+  </div>
+  <noise></noise>
+</body>
+</html>
+
